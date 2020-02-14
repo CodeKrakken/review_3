@@ -20,4 +20,8 @@ describe Spellchecker do
   it 'can detect a longer sentence with a few misspelled words' do
     expect(subject.check('the nain in spain staps mainly in the plin')).to eq('the ~nain~ in spain ~staps~ mainly in the ~plin~')
   end
+
+  it 'can return a correctly spelled sentence without issue' do
+    expect(subject.check('this is a correct sentence')).to eq('this is a correct sentence')
+  end
 end

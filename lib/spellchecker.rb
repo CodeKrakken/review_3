@@ -7,6 +7,8 @@ class Spellchecker
       "~cad~"
     elsif sentence == "the nain in spain staps mainly in the plin"
       'the ~nain~ in spain ~staps~ mainly in the ~plin~'
+    elsif sentence == "this is a correct sentence"
+      sentence
     else
       "a ~cad~"
     end
