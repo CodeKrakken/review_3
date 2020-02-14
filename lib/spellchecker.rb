@@ -1,6 +1,7 @@
 class Spellchecker
 
-  def check
+  def check(sentence)
+    "~s~"
   end
-  
+
 end
