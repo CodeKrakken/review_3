@@ -1,0 +1,2 @@
+class Spellchecker
+end
