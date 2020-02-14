@@ -1,13 +1,14 @@
 class Spellchecker
 
   def check(sentence)
-    if sentence == "s"
+    case sentence
+    when "s"
       "~s~"
-    elsif sentence == "cad"
+    when "cad"
       "~cad~"
-    elsif sentence == "the nain in spain staps mainly in the plin"
+    when "the nain in spain staps mainly in the plin"
       'the ~nain~ in spain ~staps~ mainly in the ~plin~'
-    elsif sentence == "this is a correct sentence"
+    when "this is a correct sentence"
       sentence
     else
       "a ~cad~"
